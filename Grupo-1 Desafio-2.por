@@ -1,20 +1,20 @@
 programa{
-  /*O programa È um sistema de 3 fases que deve ser executado atÈ o usu·rio escolher a opÁ„o de sair.
-    Fase 1-> {O usu·rio poder· inserir ou remover um n˙mero real em um vetor de tamanho 10. 0 È considerado um espaÁo vazio no vetor.
-              A inserÁ„o e remoÁ„o aconteceram no espaÁo vazio mais para esquerda sempre.
-              A inserÁ„o n„o pode ocorrer se o vetor estiver cheio, e a remoÁ„o n„o pode ocorrer se o vetor estiver vazio. }
+  /*O programa √© um sistema de 3 fases que deve ser executado at√© o usu√°rio escolher a op√ß√£o de sair.
+    Fase 1-> {O usu√°rio poder√° inserir ou remover um n√∫mero real em um vetor de tamanho 10. 0 √© considerado um espa√ßo vazio no vetor.
+              A inser√ß√£o e remo√ß√£o aconteceram no espa√ßo vazio mais para esquerda sempre.
+              A inser√ß√£o n√£o pode ocorrer se o vetor estiver cheio, e a remo√ß√£o n√£o pode ocorrer se o vetor estiver vazio. }
 
-    Fase 2-> {O usu·rio ir· escolher um conjunto: <n˙meros primos>, <n˙meros pares> ou <n˙meros Ìmpares>; Ent„o o sistema remover·
-              os n˙meros que n„o fazem parte do conjunto escolhido, empurrar· os n˙meros restantes para a esquerda do vetor e
-              deixar· o vetor ordenado crescentemente (com os zeros para a direita do vetor).
-              Exemplo: <n˙meros Ìmpares>: [2, 6, 7, 4, 5, 3, 0, 0, 0, 0] -> [3, 5, 7, 0, 0, 0, 0, 0, 0, 0] }
+    Fase 2-> {O usu√°rio ir√° escolher um conjunto: <n√∫meros primos>, <n√∫meros pares> ou <n√∫meros √≠mpares>; Ent√£o o sistema remover√°
+              os n√∫meros que n√£o fazem parte do conjunto escolhido, empurrar√° os n√∫meros restantes para a esquerda do vetor e
+              deixar√° o vetor ordenado crescentemente (com os zeros para a direita do vetor).
+              Exemplo: <n√∫meros √≠mpares>: [2, 6, 7, 4, 5, 3, 0, 0, 0, 0] -> [3, 5, 7, 0, 0, 0, 0, 0, 0, 0] }
 
-    Fase 3-> {O usu·rio ir· escolher uma operaÁ„o: <AdiÁ„o>, <SubtraÁ„o>, <MultiplicaÁ„o> ou <Divis„o>. Em seguida o programa ir·
-              realizar a operaÁ„o selecionada entre todos os n˙meros do vetor, em ordem crescente.
-              Exemplo: <Divis„o>: [7, 5, 3, 0, 0, 0, 0, 0, 0, 0] -> 3 / 5 / 7 = 0.08571428571428572 }
-    Cada fase deve ser uma funÁ„o.
-    Durante o a conclus„o da fase 3, o resultado deve ser exibido
-    e o usu·rio ter· que escolher entre voltar para a fase 1 com um vetor vazio
+    Fase 3-> {O usu√°rio ir√° escolher uma opera√ß√£o: <Adi√ß√£o>, <Subtra√ß√£o>, <Multiplica√ß√£o> ou <Divis√£o>. Em seguida o programa ir√°
+              realizar a opera√ß√£o selecionada entre todos os n√∫meros do vetor, em ordem crescente.
+              Exemplo: <Divis√£o>: [7, 5, 3, 0, 0, 0, 0, 0, 0, 0] -> 3 / 5 / 7 = 0.08571428571428572 }
+    Cada fase deve ser uma fun√ß√£o.
+    Durante o a conclus√£o da fase 3, o resultado deve ser exibido
+    e o usu√°rio ter√° que escolher entre voltar para a fase 1 com o mesmo vetor
     ou finalizar o programa.
     */
   funcao inicio(){
@@ -30,7 +30,7 @@ programa{
       sizeTracker = fase1(vetor, sizeTracker)
       sizeTracker = fase2(vetor, sizeTracker)
       fase3(vetor, sizeTracker)
-      escreva("VocÍ deseja repetir o programa?\n1 = Sim\n0 = N„o\n-> ")
+      escreva("Voc√™ deseja repetir o programa?\n1 = Sim\n0 = N√£o\n-> ")
       leia(continuar)
       se(nao(continuar)){
         retorne
@@ -88,7 +88,7 @@ programa{
     escreva("----------Fase 1----------\n")
 
     enquanto(continuar){
-      escreva("Escolha uma opÁ„o:\n1 = Inserir\n2 = Remover\n3 = PrÛxima fase\n-> ")
+      escreva("Escolha uma op√ß√£o:\n1 = Inserir\n2 = Remover\n3 = Pr√≥xima fase\n-> ")
       leia(opcao)
       escolha(opcao){
         caso 1:
@@ -127,7 +127,7 @@ programa{
     inteiro i, j, opcao
     escreva("----------Fase 2----------\n")
 
-    escreva("Escolha uma opÁ„o:\n1 = <n˙meros primos>\n2 = <n˙meros pares>\n3 = <n˙meros Ìmpares>\n-> ")
+    escreva("Escolha uma op√ß√£o:\n1 = <n√∫meros primos>\n2 = <n√∫meros pares>\n3 = <n√∫meros √≠mpares>\n-> ")
     leia(opcao)
 
     escolha(opcao){
@@ -182,33 +182,33 @@ programa{
     real resultado = vetor[0]
     escreva("\n----------Fase 3----------\n")
 
-    escreva("Escolha uma opÁ„o:\n1 = <AdiÁ„o>\n2 = <SubtraÁ„o>\n3 = <MultiplicaÁ„o>\n4 = <Divis„o>\n-> ")
+    escreva("Escolha uma op√ß√£o:\n1 = <Adi√ß√£o>\n2 = <Subtra√ß√£o>\n3 = <Multiplica√ß√£o>\n4 = <Divis√£o>\n-> ")
     leia(opcao)
 
     escolha(opcao){
       caso 1:
-        escreva("\nAdiÁ„o de todos os n˙meros do vetor: ")
+        escreva("\nAdi√ß√£o de todos os n√∫meros do vetor: ")
         para(i = 1; i < sizeTracker; i++){
           resultado += vetor[i+1]
         }
         escreva(resultado)
       pare
       caso 2:
-        escreva("\nSubtraÁ„o de todos os n˙meros do vetor: ")
+        escreva("\nSubtra√ß√£o de todos os n√∫meros do vetor: ")
         para(i = 1; i < sizeTracker; i++){
           resultado -= vetor[i+1]
         }
         escreva(resultado)
       pare
       caso 3:
-        escreva("\nMultiplicaÁ„o de todos os n˙meros do vetor: ")
+        escreva("\nMultiplica√ß√£o de todos os n√∫meros do vetor: ")
         para(i = 1; i < sizeTracker; i++){
           resultado *= vetor[i]
         }
         escreva(resultado)
       pare
       caso 4:
-        escreva("\nDivis„o de todos os n˙meros do vetor: ")
+        escreva("\nDivis√£o de todos os n√∫meros do vetor: ")
         para(i = 1; i < sizeTracker; i++){
           resultado /= vetor[i]
         }
